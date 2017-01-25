@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pilot.technoapp" version="1.0.0">
+    <name>Technothlon</name>
+    <description>
+        Technothlon - the ultimate test of logic.
+    </description>
+    <author email="ankit.ks@iitg.ernet.in">
+
+    </author>
+    <content src="whatsnew.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <!--<plugin name="Storage" value="org.apache.cordova.Storage" />-->
+    <access origin="*" />
+    <access origin="http://*" />
+    <access origin="https://*" />
+
+
+    <allow-intent href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <allow-navigation href="*" />
+
+    <preference name = "SplashScreen" value = "splash" />
+    <preference name = "SplashMaintainAspectRatio" value = "false" />
+    <preference name = "ShowSplashScreenSpinner" value="false"/>
+
+    <preference name="StatusBarBackgroundColor" value="#2c3d50" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+
+</widget>
