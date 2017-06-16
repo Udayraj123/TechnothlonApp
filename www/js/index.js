@@ -21,7 +21,21 @@ var app = {
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
-
+    // Bind Event Listeners
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents : function() {
+        // Doesn't seem the correct place-
+        // $(document).ready(function() {
+        //     $("#menu_listId").change(function() {
+        //         var str = $("#menu_listId option:selected").text();
+ 
+        //         $("#selectdId").text("You selected " + str);
+        //     });
+        // });
+ 
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
     // deviceready Event Handler
     //
     // Bind any cordova events here. Common events are:

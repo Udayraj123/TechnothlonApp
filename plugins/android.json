@@ -7,28 +7,28 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
-        },
-        "cordova-plugin-screen-orientation": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.pilot.technoapp"
         },
         "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
+            "PACKAGE_NAME": "com.pilot.technoapp"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
-        },
-        "com.phonegap.plugins.PushPlugin": {
             "PACKAGE_NAME": "com.pilot.technoapp"
         },
         "cordova-plugin-network-information": {
             "PACKAGE_NAME": "com.pilot.technoapp"
         },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.pilot.technoapp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.pilot.technoapp"
+        },
         "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.pilot.technoapp"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.pilot.technoapp"
         },
         "cordova-plugin-x-toast": {
@@ -37,10 +37,10 @@
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
+            "PACKAGE_NAME": "com.pilot.technoapp"
         },
         "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.pilot.technothlon"
+            "PACKAGE_NAME": "com.pilot.technoapp"
         }
     }
 }

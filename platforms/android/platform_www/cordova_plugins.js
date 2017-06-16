@@ -1,27 +1,11 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "pluginId": "cordova-plugin-splashscreen",
+        "id": "com.phonegap.plugins.PushPlugin.PushNotification",
+        "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
+        "pluginId": "com.phonegap.plugins.PushPlugin",
         "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
-        "id": "cordova-plugin-screen-orientation.screenorientation",
-        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
-        "pluginId": "cordova-plugin-screen-orientation",
-        "clobbers": [
-            "cordova.plugins.screenorientation"
-        ]
-    },
-    {
-        "id": "cordova-plugin-screen-orientation.screenorientation.android",
-        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
-        "pluginId": "cordova-plugin-screen-orientation",
-        "merges": [
-            "cordova.plugins.screenorientation"
+            "PushNotification"
         ]
     },
     {
@@ -223,14 +207,6 @@ module.exports = [
         ]
     },
     {
-        "id": "com.phonegap.plugins.PushPlugin.PushNotification",
-        "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
-        "pluginId": "com.phonegap.plugins.PushPlugin",
-        "clobbers": [
-            "PushNotification"
-        ]
-    },
-    {
         "id": "cordova-plugin-network-information.network",
         "file": "plugins/cordova-plugin-network-information/www/network.js",
         "pluginId": "cordova-plugin-network-information",
@@ -245,6 +221,30 @@ module.exports = [
         "pluginId": "cordova-plugin-network-information",
         "clobbers": [
             "Connection"
+        ]
+    },
+    {
+        "id": "cordova-plugin-screen-orientation.screenorientation",
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-screen-orientation.screenorientation.android",
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "merges": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "pluginId": "cordova-plugin-splashscreen",
+        "clobbers": [
+            "navigator.splashscreen"
         ]
     },
     {
@@ -272,16 +272,16 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.3.1",
-    "cordova-plugin-splashscreen": "4.0.0",
-    "cordova-plugin-screen-orientation": "1.4.2",
+    "com.phonegap.plugins.PushPlugin": "2.5.0",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-file": "4.3.1",
     "cordova-plugin-file-transfer": "1.6.1",
     "cordova-plugin-inappbrowser": "1.6.1",
-    "com.phonegap.plugins.PushPlugin": "2.5.0",
     "cordova-plugin-network-information": "1.3.0",
+    "cordova-plugin-screen-orientation": "1.4.2",
+    "cordova-plugin-splashscreen": "4.0.0",
     "cordova-plugin-statusbar": "2.2.1",
+    "cordova-plugin-whitelist": "1.3.1",
     "cordova-plugin-x-toast": "2.5.2"
 };
 // BOTTOM OF METADATA

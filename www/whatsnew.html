@@ -6,10 +6,8 @@
     <link rel="stylesheet" href="css/hammenuwhatsnew.css">
     <link rel="stylesheet" href="css/materialicons.css">
 
-
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
-
-
+<!-- https://stackoverflow.com/questions/17653384/refused-to-execute-inline-script-because-it-violates-the-following-content-secur  -->
+ <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://technothlon.techniche.org ">
 
 
 
@@ -662,12 +660,44 @@ CLICK HERE TO VISIT
 
   </main>
 </div>
-  <script src="cordova.js"></script>
+  <script> alert('hello'); </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/file.js"></script>
+  
   <script>
+  function jsonDataParse(json){
+  // var c = 0;
+ 
+  // var mylist = $("select#menu_listId");
+  // mylist.empty();
+  // var tempOpt;
+ 
+  // mylist.append("<option>Select</option>")
+  // $.each(json, function(key, value) {
+ 
+  //   tempOpt = '<option value="' + key + '">' + value + '</option>';
+  //   mylist.append(tempOpt)
+  //   mylist.selectmenu("refresh");
+ 
+  // });
+    alert(1);
+  }
       $(document).ready(function () {
           $("#contact").addClass("active");
+          console.log('hello');
+            var city = "https://www.technothlon.techniche.org/function/citywcrep";
+           $.ajax({
+                  url: city,
+                  type: 'post',
+
+                  dataType : 'jsonp',
+                  jsonpCallback : 'jsonDataParse',
+                  data: {state: 2},
+                 
+                  error: function(){
+                      alert("Error2");
+                  }
+              });
       });
 
       $('#state').change(function () {
