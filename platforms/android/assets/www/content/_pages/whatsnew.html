@@ -1,626 +1,113 @@
-<body class="bg-color1">
+<!--Whats new-->
 
-  <img src="img/mascot.png" class="mascot1">
+<!-- <section class="mdl-layout__tab-panel is-active" id="fixed-tab-2" style="background-color: #eeeeee;"> -->
+<section id="fixed-tab-2" style="background-color: #eeeeee;">
 
-  <!-- Simple header with fixed tabs. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
-  mdl-layout--fixed-tabs">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Home</span>
+  <div class="whatsnew_content" id="whatsnew_content">
+    <!--Card1-->
+
+    <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
+
+      <div class="mdl-card__media">
+        <img src="img/tpediaposter.jpg" style="width: 100%; height: auto;">
+      </div>
+
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">The Monthly Quiz<span id="month"></span></h2>
+      </div>
+
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="technopedia">
+          START TECHNOPEDIA
+        </a>
+      </div>
     </div>
-    <!-- Tabs -->
 
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab">About Us</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab is-active">What's New</a>
-      <a href="#fixed-tab-3" class="mdl-layout__tab">Contact</a>
+
+    <!--CARD2-->
+
+    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original"  style="margin-bottom: 8px;">
+
+
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text">Recent Updates</h2>
+      </div>
+
+
+      <div class="mdl-card__supporting-text mdl-card--expand" id="card">
+        <ul id="mylist" style="position:relative;bottom:20px;">
+          <li>Technopedia is Live!!</li>
+          <li>Go to our OFFICIAL DISCUSSION FORUM for Technothlon Question Paper</li>
+        </ul>
+      </div>
+
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="more">
+          MORE
+        </a>
+      </div>
     </div>
-  </header>
 
-  <!-- ham menu -->
 
-  <div class="mdl-layout__drawer">
-    <div class="ham-title">
-      <img src="img/bgmascot.png" style="position: relative; width: 100%; height: auto; opacity: 0.05;">
-      <img src="img/technoicon.png" style="position: absolute; top: 40px; left: 16px; width: 20.6%; height: auto;">
-      <span style="position: absolute; top: 56px; left: 96px; font-weight: 500; color: #eeeeee">Technothlon'17</span>
-      <a href="http://technothlon.techniche.org" style="position: absolute; top: 80px; left: 96px; font-weight: 300; color: #f57c00; text-decoration: none;">technothlon.techniche.org</a>
-    </div>
-    <div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="whatsnew.html" style="background-color: #e0e0e0; color: #f57c00;"><img src="img/ham-home-active.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Home</a>
-        <a class="mdl-navigation__link" href="tpedia.html"><img src="img/ham-tpedia.png" style="margin-right: 32px; color: #212121; width: 8.5%; height: 8.5%;">Technopedia</a>
-        <a class="mdl-navigation__link" href="register.html"><img src="img/ham-register.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Register</a>
-        <a class="mdl-navigation__link" href="LED.html"><img src="img/ham-led.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">LED</a>
-        <a class="mdl-navigation__link" href="download.html"><img src="img/ham-download.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Downloads</a>
-        <a class="mdl-navigation__link" href="videos.html"><img src="img/ham-videos.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Videos</a>
-        <a class="mdl-navigation__link" href="faq.html"><img src="img/ham-faq.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">FAQs</a>
+    <!--Card3-->
+    <a href="https://www.facebook.com/hashtag/technocoupdoeil?source=embed">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
 
-      </nav>
-    </div>
-  </div>
+        <div class="mdl-card__media">
+          <img src="img/tcoup.jpg" style="width: 100%; height: auto;" id="tcoupimg">
+        </div>
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">Techno Coup D'oeil</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
+          Here's Techno Coup D'œil <span id="tcoupid">E0402</span><br>
 
-  <!-- End of Hame Menu-->
 
+        </div>
 
-  <main class="mdl-layout__content" id="content">
-
-    <!--AboutUs-->
-
-    <section class="mdl-layout__tab-panel" id="fixed-tab-1">
-      <div class="page-content">
-        <p class="about_text">Through a series of events involving mental aptitude, logic, and dexterity, we seek to provide school students, a platform to build fundamental experience and knowledge, to exercise co-ordination skills, and to think out of the box.</p>
-
-        <!--What are we? -->
-        <h4 id="head" class="about1">WHAT ARE WE?</h4>
-        <p id="text" class="about_text">
-          Technothlon is an international school championship organized by the student fraternity of IIT Guwahati. Technothlon began in 2004 in a small room with an aim to Inspire Young Minds. Starting on our journey with a participation of 200 students confined to the city of Guwahati, over the past 12 years we have expanded our reach to over 300 cities all over India and various centers abroad. The championship is organized over 2 rounds:<br><br><b>Prelims:</b> a written preliminary examination which takes place in numerous schools all over India in the month of July.<br><b>Mains:</b> an event based competition which is conducted at IIT Guwahati, among the top 100 students from each squad.
-
-
-
-        </p>
-
-        <!--Structure -->
-
-        <h4 id="head1" class="about1">STRUCTURE</h4>
-        <p id="text1" class="about_text">Students participate in teams of 2.<br><br>
-          There are two squads:<br>
-          <b>Junior Squad-</b> Students of classes 9th and 10th.<br>
-          <b>Hauts Squad-</b> Students of classes 11th and 12th.<br><br>
-
-          The members can belong to the same class or as well as different class. For example: a team consisting of one member from class IX and one of class X is perfectly acceptable for Junior squad. The basic requirements for team formation are they should consist exactly two members from the same squad and the same institution.</p>
-
-          <!--Levels-->
-
-          <h4 id="head2" class="about1">LEVELS</h4>
-          <p id="text2" class="about_text"><b>Prelims (to be held to 16th July 2017)</b><br><br>Prelims is in general an objective written exam. It involves no syllabus or general knowledge and relies solely on the student's logical and analytical thinking abilities. The exam is generally of 2 and ½ hour length.The two team members are given a common Question paper and answer sheet and they can discuss it amongst themselves and attempt the paper together.<br><br>
-            <b>Mains (To be head at IITG during Techniche'17)</b><br><br>Mains is an event based competition.The selected teams of the same squad compete against each other in various events. Each team will have to face 3 events from which top 5 teams from each squad will be selected for the Final Showdown. The events, like prelims, do not require any prerequisite knowledge and students will be taught any extra knowledge they require. The events vary every year and in the past there have been events like Robotics, Aircrash Investigation, Water Rocket and many more!
-
-
-
-          </p>
-
-
-          <h4 class="about1" id="head3">SELECTION PROCESS</h4>
-          <p class="about_text" id="text3">The teams are selected on the basis of the total marks scored in Prelims. The Top 50 teams <b>from each squad</b> are called to IIT Guwahati for the Mains Round.</p>
-          <h4 class="about1" id="head4">REWARDS</h4>
-          <p class="about_text" id="text4">Other than the top 100 participants which are selected for mains in each squad (& given Gold Certificates); the next 400 participants in both the squads are awarded with Silver Certificates from Techniche, IIT Guwahati. Also there are various other prizes to be won which will be disclosed later. Everyone participating in Technothlon 2017 will receive e-Certificate of participation.</p>
-          <h4 class="about1" id="head5">TESTIMONIALS</h4>
-          <p id="text5" class="about_text"> <b>HC Verma</b> <br><br>
-            I saw your questions, and it is good that I don't have to appear in that. It's very tough and very very challenging and you are targeting the best brains.
-            <br>The "Best Brains" need the challenge!
-
-            <br> <br> <b>Shubham Jain (AIR 56, IITJEE 2012)</b><br> <br>It was my trip to IIT Guwahati in 2009 for Technothlon that motivated me and helped me achieve such a wonderful rank. I look to participate again in Techniche.
-
-
-          </p>
-          <!-- Your content goes here --></div>
-        </section>
-
-        <!--Whats new-->
-
-        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-2" style="background-color: #eeeeee;">
-
-          <div class="whatsnew_content" id="whatsnew_content">
-            <!--Card1-->
-
-            <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
-
-              <div class="mdl-card__media">
-                <img src="img/tpediaposter.jpg" style="width: 100%; height: auto;">
-              </div>
-
-              <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">The Monthly Quiz<span id="month"></span></h2>
-              </div>
-
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="technopedia">
-                  START TECHNOPEDIA
-                </a>
-              </div>
-            </div>
-
-
-            <!--CARD2-->
-
-            <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original"  style="margin-bottom: 8px;">
-
-
-              <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text">Recent Updates</h2>
-              </div>
-
-
-              <div class="mdl-card__supporting-text mdl-card--expand" id="card">
-                <ul id="mylist" style="position:relative;bottom:20px;">
-                  <li>Technopedia is Live!!</li>
-                  <li>Go to our OFFICIAL DISCUSSION FORUM for Technothlon Question Paper</li>
-                </ul>
-              </div>
-
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="more">
-                  MORE
-                </a>
-              </div>
-            </div>
-
-
-            <!--Card3-->
-            <a href="https://www.facebook.com/hashtag/technocoupdoeil?source=embed">
-              <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
-
-                <div class="mdl-card__media">
-                  <img src="img/tcoup.jpg" style="width: 100%; height: auto;" id="tcoupimg">
-                </div>
-                <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">Techno Coup D'oeil</h2>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
-                  Here's Techno Coup D'œil <span id="tcoupid">E0402</span><br>
-
-
-                </div>
-
-              </div>
-            </a>
-
-            <!--Card4-->
-            <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
-
-              <div class="mdl-card__title mdl-card--expand">
-                <h2 class="mdl-card__title-text" style="margin-top: 0px;">Technothlon Official Facebook Page</h2>
-              </div>
-
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="more" href="https://www.facebook.com/technothlon.techniche/">
-                  CLICK HERE TO VISIT
-                </a>
-              </div>
-
-            </div>
-
-            <!--Card5-->
-            <a href="http://technothlon.tumblr.com/post/156212444233/the-fosbury-flop">
-              <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
-
-                <div class="mdl-card__media">
-                  <img src="img/blog.jpg" style="width: 100%; height: auto;" id="tcoupimg">
-                </div>
-                <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">Technothlon Official Blog</h2>
-                </div>
-                <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
-                  Read the blog- <span id="tcoupid"><b>The Science Behind The Fosbury Flop</b></span><br>
-
-
-                </div>
-
-              </div>
-            </a>
-
-
-
-
-
-
-
-
-          </div>  <!-- Your content goes here -->
-        </section>
-
-        <!--Contact-->
-
-        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
-          <div class="page-content">
-
-            <h4 class="about1 heads">CITY REPRESENTATIVE</h4>
-            <div id="text7">
-              <span style="margin-left: 4.5%; font-family: 'roboto'; font-size: 12px; font-weight: 300;">Search your city</span><br>
-
-              <select class="select_menu" id="state" name="state" style="margin-top: 8px;">
-                <option value="">Select State</option>
-                <option value="1">ANDHRA PRADESH</option>
-                <option value="2">ARUNACHAL PRADESH</option>
-                <option value="3">ASSAM</option>
-                <option value="4">BIHAR</option>
-                <option value="5">CHHATTISGARH</option>
-                <option value="6">GOA</option>
-                <option value="7">GUJARAT</option>
-                <option value="8">HARYANA</option>
-                <option value="9">HIMACHAL PRADESH</option>
-                <option value="10">JAMMU & KASHMIR</option>
-                <option value="11">JHARKHAND</option>
-                <option value="12">KARNATAKA</option>
-                <option value="13">KERALA</option>
-                <option value="14">MADHYA PRADESH</option>
-                <option value="15">MAHARASHTRA</option>
-                <option value="16">MANIPUR</option>
-                <option value="17">MEGHALAYA</option>
-                <option value="18">MIZORAM</option>
-                <option value="19">NAGALAND</option>
-                <option value="20">ODISHA</option>
-                <option value="21">PUNJAB</option>
-                <option value="22">RAJASTHAN</option>
-                <option value="23">SIKKIM</option>
-                <option value="24">TAMIL NADU</option>
-                <option value="25">TELANGANA</option>
-                <option value="26">TRIPURA</option>
-                <option value="27">UTTARAKHAND</option>
-                <option value="28">UTTAR PRADESH</option>
-                <option value="29">WEST BENGAL</option>
-                <option value="30">DELHI (NCT)</option>
-                <option value="31">UNION TERRITORY</option>
-              </select>
-
-              <select class="select_menu" disabled="disabled" id="city">
-                <option>Select City</option>
-              </select>
-              <div id="test"> </div>
-              <div style="text-align: center;display: block ;" id="crepsbycity"></div>
-            </div>
-
-            <h4 class="about1 heads">MEET THE HEADS</h4>
-            <div id="text8">
-
-              <!--Card1-->
-              <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-                <div class="mdl-card__media" id="jitika">
-                  <div class="contact_image">
-                    <img src="img/jitika.jpg" style="width: 100%; height: auto;">
-                    <h2 class="zone"><span class="zone_bg">North Zone<span></h2>
-                  </div>
-                </div>
-
-
-                <div class="mdl-card__title mdl-card--expand"  id="northzone">
-
-                  <h2 class="mdl-card__title-text">North Zone</h2>
-                </div>
-
-                <span style="margin-left:16px; margin-bottom: 16px;" id="name" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Jitika Rajpoot</span></span>
-
-                <div class="mdl-card__supporting-text" id="contact_info">
-
-                  <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+917664014135</span></span><br><br>
-                  <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">jitika@technothlon.techniche.org</span></span><br>
-                </div>
-
-  <!--div class="mdl-card__actions mdl-card--border" style="margin-top: 8px;">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="cmore1">
-      MORE
+      </div>
     </a>
-  </div-->
-</div>
 
-<!--Card2-->
+    <!--Card4-->
+    <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
 
-<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-  <div class="mdl-card__media" id="jitika1">
-    <div class="contact_image">
-      <img src="img/pratyay.jpg" style="width: 100%; height: auto;">
-      <h2 class="zone"><span class="zone_bg">West Zone<span></h2>
+      <div class="mdl-card__title mdl-card--expand">
+        <h2 class="mdl-card__title-text" style="margin-top: 0px;">Technothlon Official Facebook Page</h2>
+      </div>
+
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="more" href="https://www.facebook.com/technothlon.techniche/">
+          CLICK HERE TO VISIT
+        </a>
+      </div>
+
     </div>
-  </div>
+
+    <!--Card5-->
+    <a href="http://technothlon.tumblr.com/post/156212444233/the-fosbury-flop">
+      <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
+
+        <div class="mdl-card__media">
+          <img src="img/blog.jpg" style="width: 100%; height: auto;" id="tcoupimg">
+        </div>
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text">Technothlon Official Blog</h2>
+        </div>
+        <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
+          Read the blog- <span id="tcoupid"><b>The Science Behind The Fosbury Flop</b></span><br>
 
 
-  <div class="mdl-card__title mdl-card--expand"  id="northzone1">
+        </div>
 
-    <h2 class="mdl-card__title-text">West Zone</h2>
-  </div>
-
-  <span style="margin-left:16px; margin-bottom: 16px;" id="name1" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Pratyay Nigam</span></span>
-
-  <div class="mdl-card__supporting-text" id="contact_info1">
-
-    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+918723886554</span></span><br><br>
-    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">pratyay@technothlon.techniche.org</span></span><br>
-  </div>
-
-</div>
-
-<!--Card3-->
-<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-  <div class="mdl-card__media" id="jitika2">
-    <div class="contact_image">
-      <img src="img/uday.jpg" style="width: 100%; height: auto;">
-      <h2 class="zone"><span class="zone_bg">Central Zone<span></h2>
-    </div>
-  </div>
+      </div>
+    </a>
 
 
-  <div class="mdl-card__title mdl-card--expand"  id="northzone2">
-
-    <h2 class="mdl-card__title-text">Central Zone</h2>
-  </div>
-
-  <span style="margin-left:16px; margin-bottom: 16px;" id="name2" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Udayraj Shrikant Deshmukh</span></span>
-
-  <div class="mdl-card__supporting-text" id="contact_info2">
-
-    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+918723885619</span></span><br><br>
-    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">udayraj@technothlon.techniche.org</span></span><br>
-  </div>
 
 
-</div>
-
-<!--Card4-->
-<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-  <div class="mdl-card__media" id="jitika3">
-    <div class="contact_image">
-      <img src="img/yash.jpg" style="width: 100%; height: auto;">
-      <h2 class="zone"><span class="zone_bg">East Zone<span></h2>
-    </div>
-  </div>
 
 
-  <div class="mdl-card__title mdl-card--expand"  id="northzone3">
-
-    <h2 class="mdl-card__title-text">East Zone</h2>
-  </div>
-
-  <span style="margin-left:16px; margin-bottom: 16px;" id="name3" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Yash Gandhe</span></span>
-
-  <div class="mdl-card__supporting-text" id="contact_info3">
-
-    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+919881075633</span></span><br><br>
-    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">yash@technothlon.techniche.org</span></span><br>
-  </div>
 
 
-</div>
-
-<!--Card5-->
-<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-  <div class="mdl-card__media" id="jitika4">
-    <div class="contact_image">
-      <img src="img/likhita.jpg" style="width: 100%; height: auto;">
-      <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
-    </div>
-  </div>
-
-
-  <div class="mdl-card__title mdl-card--expand"  id="northzone4">
-
-    <h2 class="mdl-card__title-text">South Zone</h2>
-  </div>
-
-  <span style="margin-left:16px; margin-bottom: 16px;" id="name4" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Likhita Konjeti</span></span>
-
-  <div class="mdl-card__supporting-text" id="contact_info4">
-
-    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 7896669914</span></span><br><br>
-    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">likhita@technothlon.techniche.org</span></span><br>
-  </div>
-
-
-</div>
-
-<!--Card6-->
-<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-  <div class="mdl-card__media" id="jitika5">
-    <div class="contact_image">
-      <img src="img/vishakh.jpg" style="width: 100%; height: auto;">
-      <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
-    </div>
-  </div>
-
-
-  <div class="mdl-card__title mdl-card--expand"  id="northzone5">
-
-    <h2 class="mdl-card__title-text">South Zone</h2>
-  </div>
-
-  <span style="margin-left:16px; margin-bottom: 16px;" id="name5" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Vishak Regu</span></span>
-
-  <div class="mdl-card__supporting-text" id="contact_info5">
-
-    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 8876211554</span></span><br><br>
-    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">vishak@technothlon.techniche.org</span></span><br>
-  </div>
-
-
-</div>
-
-
-</div>
-
-
-<h4 class="about1 heads">CATCH US ON SOCIAL MEDIA</h4>
-<div id="text9">
-
-  <div class="demo-card-square mdl-card mdl-shadow--2dp">
-
-    <ul style="list-style:none;">
-      <li style="border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 8px; height: 64px;"><a href="https://www.facebook.com/technothlon.techniche" style="color: #212121;">
-
-        <img src="img/fb.png" style="width: 48px; height: auto; position: absolute; top:16px; left: 8px;">
-        <h6 style="margin: 0px; padding: 0px; font-size: 14px; font-weight: 500; position: absolute; top: 16px; left: 72px;">Facebook</h6>
-        <h6 style="padding: 0px; margin:0px; font-size: 14px; font-weight: 300; position: absolute; top: 40px; left: 72px;">Like our FB page for latest updates!</h6></a>
-      </li>
-
-      <li style="border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 8px; height: 64px;"><a href="https://plus.google.com/+technothlon" style="color: #212121;">
-
-        <img src="img/gplus.png" style="width: 48px; height: auto; position: absolute; top:96px; left: 8px;">
-        <h6 style="margin: 0px; padding: 0px; font-size: 14px; font-weight: 500; position: absolute; top: 96px; left: 72px;">Google Plus</h6>
-        <h6 style="padding: 0px; margin:0px; font-size: 14px; font-weight: 300; position: absolute; top: 120px; left: 72px;">+1 our G+ Page for the more info!</h6></a>
-      </li>
-
-      <li style="border-bottom: 1px solid rgba(0,0,0,0.12); padding-bottom: 8px; height: 64px;"><a href="http://technothlon.tumblr.com/" style="color: #212121;">
-
-        <img src="img/tumblr.png" style="width: 48px; height: auto; position: absolute; top:170px; left: 8px;">
-        <h6 style="margin: 0px; padding: 0px; font-size: 14px; font-weight: 500; position: absolute; top: 170px; left: 72px;">Tumblr</h6>
-        <h6 style="padding: 0px; margin:0px; font-size: 14px; font-weight: 300; position: absolute; top: 194px; left: 72px;">Follow our Blogs on Tumblr!</h6></a>
-      </li>
-
-      <li style="padding-bottom: 0px; height: 64px;"><a href="https://www.facebook.com/technothlon.techniche" style="color: #212121;">
-
-        <img src="img/email.png" style="width: 48px; height: auto; position: absolute; top:242px; left: 8px;">
-        <h6 style="margin: 0px; padding: 0px; font-size: 14px; font-weight: 500; position: absolute; top: 242px; left: 72px;">Email</h6>
-        <h6 style="padding: 0px; margin:0px; font-size: 14px; font-weight: 300; position: absolute; top: 266px; left: 72px;">technothlon@techniche.org</h6></a>
-      </li>
-
-    </ul>
-
-
-  </div>
-</div>
-</div>
-
+  </div>  <!-- Your content goes here -->
 </section>
-
-<!--end of home-->
-
-</main>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="cordova.js"></script>
-<script src="js/app.js"></script>
-<script src="js/file.js"></script>
-<script src="js/expand_card.js"></script>
-<script src="js/expand-register.js"></script>
-<script src="js/potrait.js"></script>
-
-
-
-<script>
-function jsonDataParse2(json){
-  console.log(json);
-  
-}
-function jsonDataParse(result){
-  console.log('2');
-  result=result.response;
-  // var regex = new RegExp('col-md-4 col-xs-6', 'g');
-  // result = result.replace(regex, 'col-md-4');
-  // var reg = new RegExp('City Representatives in '+$(this).val(), 'g');
-  // result = result.replace(reg, '<br/>');
-  console.log(result);
-  $('#crepsbycity').html(result);
-}
-$('#state').change(function () {
-  $('#crepsbycity').hide();
-  if($('#state').val() === "") {
-    $('#city').prop('disabled', 1);
-  }
-  else {
-    var city = "http://technothlon.techniche.org/function/app/citywcrep";
-    $('#city').html('<option value="">Loading</option>');
-    $.ajax({
-      url: city,
-      type: "GET",
-      dataType: "jsonp",
-      // method: 'post',
-      // You can't POST using JSONP...it simply doesn't work that way, it creates a <script> element to fetch data...which has to be a GET request.
-      crossDomain: true,
-      data: {'jsonpCallback': 'jsonDataParse2','state': $(this).val(),'mode':'app_crep_interface'},
-      jsonpCallback: 'jsonDataParse2',
-      success: function(result) {
-        $('#city').prop('disabled', 0);
-        $('#city').html(result.response);
-      },
-      error: function(e){
-        alert("Error loading list");
-      }
-    });
-  }
-});
-
-
-$('#city').change(function () {
-  if($('#city').val() !== "") {
-    var cityrep = "http://technothlon.techniche.org/function/app/getcityrep";
-    $.ajax({
-      url: cityrep,
-      // method: 'get',
-      type: 'GET',
-      dataType: "jsonp",
-      //mode = app_crep_interface will format the response suitable for mobile.
-      data: {'jsonpCallback': 'jsonDataParse','city': $(this).val(),'mode':'app_crep_interface'},
-      jsonpCallback: 'jsonDataParse',
-      error: function(e){
-        alert("Error loading cityreps list");
-      }
-    });
-    $('#crepsbycity').show();
-  }
-  else {
-    $('#crepsbycity').hide();
-  }
-});
-</script><script>
-$(document).ready(function () {
-  var storage = window.localStorage;
-  var c = storage.getItem('count');
-  for(i=1; i<=c; i++)
-  {
-    var msg = storage.getItem("msg"+i);
-    $('#mylist').append('<li class="text6">'+ msg +'</li>');
-  }
-});
-</script>
-
-<script>
-var d = new Date();
-var month = [];
-month[0] = "Jan";
-month[1] = "Feb";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "Aug";
-month[8] = "Sept";
-month[9] = "Oct";
-month[10] = "Nov";
-month[11] = "Dec";
-var n = month[d.getMonth()];
-
-$('#month').html('(' + n + ')');
-</script>
-
-<script>
-$(document).ready(function () {
-  var storage = window.localStorage;
-  var c = storage.getItem('icardcount');
-
-  for(i=1; i<=c; i++)
-  {
-    var msg = storage.getItem("icard"+i);
-    $('#whatsnew_content').append(msg + '<br/>');
-  }
-});
-
-</script>
-<script>
-$(document).ready(function () {
-  var storage = window.localStorage;
-  var c = storage.getItem('coupSet');
-  if(c == 1)
-  {
-    $('#tcoupimg').attr("src", ""+storage.getItem('coupImgUrl'));
-    $('#tcoupid').html(storage.getItem('coupId'));
-  }
-});
-
-</script>
-
-<script>
-$(document).ready(function () {
-  var storage = window.localStorage;
-  var c1 = storage.getItem('tcardcount');
-  for(i=1; i<=c1; i++)
-  {
-    var msg = storage.getItem("tcard"+i);
-    $('#whatsnew_content').append(msg + '<br/>');
-  }
-});
-</script>
-
-
-</body>

@@ -19,7 +19,7 @@ module.exports = function (grunt) {
 
     assemble: {
          options: {
-           layout: 'compile.html',// The final build file?! .html extension
+           layout: 'compile_whatsnew.html',// The final build file?! .html extension
            layoutdir: './www/layouts/',
            partials: './www/layouts/partials/**/*.html'
          },
