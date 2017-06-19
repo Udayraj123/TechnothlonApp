@@ -485,8 +485,8 @@ h4.active
               <select class="select_menu" disabled="disabled" id="city">
                 <option>Select City</option>
               </select>
-              
-              <div style="text-align: left;display: block ;" id="crepsbycity"></div>
+              <div id="test"> </div>
+              <div style="text-align: center;display: block ;" id="crepsbycity"></div>
             </div>
 
             <h4 class="about1 heads">MEET THE HEADS</h4>
@@ -725,6 +725,7 @@ function jsonDataParse(result){
   // result = result.replace(regex, 'col-md-4');
   // var reg = new RegExp('City Representatives in '+$(this).val(), 'g');
   // result = result.replace(reg, '<br/>');
+  console.log(result);
   $('#crepsbycity').html(result);
 }
 $('#state').change(function () {
