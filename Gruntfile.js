@@ -12,29 +12,32 @@ module.exports = function (grunt) {
       dev: {
         options: {
           port: 8000,
-          base: './www/generated'
+          base: './www'
         }
       }
     },
 
     assemble: {
          options: {
-           layout: 'compile.hbs',// The final build file?! .hbs extension
+           layout: 'compile.html',// The final build file?! .html extension
            layoutdir: './www/layouts/',
-           partials: './www/partials/**/*.hbs'
+           partials: './www/layouts/partials/**/*.html'
          },
          posts: {
-           files: [{
+           files: [
+           {
              cwd: './www/content/',
-             dest: './www/generated/',//files that are processed they will be placed here
+             dest: './www/',//files that are processed they will be placed here
              expand: true,
-             src: ['**/*.hbs', '!_pages/**/*.hbs'] //do not take _pages folder. take everything else.
-           }, {
+             src: ['**/*.html', '!_pages/**/*.html'] //do not take _pages folder. take everything else.
+           }, 
+           {
              cwd: './www/content/_pages/',
-             dest: './www/generated/',//files that are processed they will be placed here
+             dest: './www/',//files that are processed they will be placed here
              expand: true,
-             src: '**/*.hbs'
-           }]
+             src: '**/*.html'
+           }
+           ]
          }
        }
 
@@ -42,8 +45,9 @@ module.exports = function (grunt) {
 
   /* load every plugin in package.json */
   grunt.loadNpmTasks('grunt-assemble');
+  grunt.loadNpmTasks('grunt-connect');
 
   /* grunt tasks */
-  grunt.registerTask('default', ['connect']);
+  grunt.registerTask('default', ['assemble']);
 
 };
