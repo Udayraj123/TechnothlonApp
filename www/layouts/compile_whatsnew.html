@@ -21,9 +21,10 @@
 </div> -->
 </header>
 <!-- ham menu & main start -->
-{{>hammenu}}
+{{>sidebar}}
 
 <script>
+// swipe functionality
 $(function() {
 	$(".mdl-layout__drawer, .mdl-layout").on('swipeleft',function() {
 		if($('.mdl-layout__obfuscator').hasClass('is-visible')){
@@ -32,7 +33,7 @@ $(function() {
 			layout.MaterialLayout.toggleDrawer();
 		}
 		else{
-			console.log('Bug');
+			console.log('Bug in swipe');
 		}
 	});
 
@@ -80,7 +81,7 @@ $(function() {
 				{{>about}} 
 			</div>
 			<div data-role="page" role="tabpanel" class="tab-pane fade in active" id="whatsnew">
-				{{> body}} 
+				{{>body}} 
 			</div>
 			<div data-role="page" role="tabpanel" class="tab-pane fade" id="contact">
 				{{>contact}} 
