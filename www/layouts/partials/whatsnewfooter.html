@@ -58,7 +58,7 @@ $('#city').change(function () {
       type: 'GET',
       dataType: "jsonp",
       //mode = app_crep_interface will format the response suitable for mobile.
-      data: {'jsonpCallback': 'jsonDataParse','city': $(this).val(),'mode':'app_crep_interface'},
+      data: {'jsonpCallback': 'jsonDataParse','city': $(this).val(),'state':$('#state').val(),'mode':'app_crep_interface'},
       jsonpCallback: 'jsonDataParse',
       error: function(e){
         alert("Error loading cityreps list");

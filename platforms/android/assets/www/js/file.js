@@ -10,7 +10,10 @@ var tccount;
 var toast;
 var app = function() {
     document.addEventListener('deviceready', onDeviceReady.bind(this), false);
-    document.getElementById("technopedia").addEventListener("click", openBrowser);
+    var el = document.getElementById('technopedia');
+    if(el) {
+        el.addEventListener('click', openBrowser);
+    }
 
 };
 

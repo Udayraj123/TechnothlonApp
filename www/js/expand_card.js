@@ -60,14 +60,15 @@ document.addEventListener("DOMContentLoaded",  function(){
 
 function clicked(more){
 
-
+  if(more){
     more.addEventListener("click", function(event){more.innerHTML = "LESS";
 
     more.addEventListener("click", function(event){more.innerHTML = "MORE"; clicked(more);})
-
+  
 
 
   });
+  }
 }
 
 

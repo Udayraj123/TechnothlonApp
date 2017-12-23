@@ -11,7 +11,7 @@
   
   <!-- https://stackoverflow.com/questions/17653384/refused-to-execute-inline-script-because-it-violates-the-following-content-secur  -->
   <!-- This one is definitely BLOCKING it instead of UNBLOCKING  -->
-  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://technothlon.techniche.org/function/citywcrep "> -->
+  <meta http-equiv="Content-Security-Policy" content="default-src *; font-src 'self' data: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://technothlon.techniche.org/function/citywcrep ">
 
 
 
@@ -231,7 +231,7 @@
 
   </style>
 
-  <!-- jquery 3.2.1 is buggish while jquery 1 doesn't support swipe -->
+  <!-- jquery 3.2.1 is buggish with swipes, while jquery 1 doesn't support swipe -->
   <script src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -263,14 +263,16 @@
     <div class="ham-title">
       <img src="img/bgmascot.png" style="position: relative; width: 100%; height: auto; opacity: 0.05;">
       <img src="img/technoicon.png" style="position: absolute; top: 40px; left: 16px; width: 20.6%; height: auto;">
-      <span style="position: absolute; top: 56px; left: 96px; font-weight: 500; color: #eeeeee">Technothlon'17</span>
+      <span style="position: absolute; top: 56px; left: 96px; font-weight: 500; color: #eeeeee">Technothlon'18</span>
       <a href="http://technothlon.techniche.org" style="position: absolute; top: 80px; left: 96px; font-weight: 300; color: #f57c00; text-decoration: none;">technothlon.techniche.org</a>
     </div>
     <div>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="whatsnew.html" style="background-color: #e0e0e0; color: #f57c00;"><img src="img/ham-home-active.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Home</a>
-        <a class="mdl-navigation__link" href="tpedia.html"><img src="img/ham-tpedia.png" style="margin-right: 32px; color: #212121; width: 8.5%; height: 8.5%;">Technopedia</a>
-        <a class="mdl-navigation__link" href="register.html"><img src="img/ham-register.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Register</a>
+        <!-- <a class="mdl-navigation__link" href="tpedia.html"><img src="img/ham-tpedia.png" style="margin-right: 32px; color: #212121; width: 8.5%; height: 8.5%;">Technopedia</a> -->
+        <!-- <a class="mdl-navigation__link" href="register.html"><img src="img/ham-register.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Register</a> -->
+        <!-- <a class="mdl-navigation__link" href="results.html"><img src="img/ham-register.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Results</a> -->
+        <!-- <a class="mdl-navigation__link" href="certificates.html"><img src="img/ham-register.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Certificates</a> -->
         <a class="mdl-navigation__link" href="LED.html"><img src="img/ham-led.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">LED</a>
         <a class="mdl-navigation__link" href="download.html"><img src="img/ham-download.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Downloads</a>
         <a class="mdl-navigation__link" href="videos.html"><img src="img/ham-videos.png" style="margin-right: 32px; width: 8.5%; height: 8.5%;">Videos</a>
@@ -279,11 +281,12 @@
       </nav>
     </div>
   </div>
-  <!-- End of Hame Menu-->
+  <!-- End of Ham Menu-->
 
 
 
 <script>
+// swipe functionality
 $(function() {
 	$(".mdl-layout__drawer, .mdl-layout").on('swipeleft',function() {
 		if($('.mdl-layout__obfuscator').hasClass('is-visible')){
@@ -292,7 +295,7 @@ $(function() {
 			layout.MaterialLayout.toggleDrawer();
 		}
 		else{
-			console.log('Bug');
+			console.log('Bug in swipe');
 		}
 	});
 
@@ -343,12 +346,15 @@ $(function() {
 				<!-- <section class="mdl-layout__tab-panel" id="fixed-tab-1"> -->
 				<section id="fixed-tab-1">
 				  <div class="page-content">
-				    <p class="about_text">Through a series of events involving mental aptitude, logic, and dexterity, we seek to provide school students, a platform to build fundamental experience and knowledge, to exercise co-ordination skills, and to think out of the box.</p>
+				    <p class="about_text">Through a series of events involving mental aptitude, logic, and dexterity, we seek to provide school students, 
+				      a platform to build fundamental experience and knowledge, <br>
+				      to exercise co-ordination skills, and <br>
+				      to think out of the box !</p>
 				
 				    <!--What are we? -->
 				    <h4 id="head" class="about1">WHAT ARE WE?</h4>
 				    <p id="text" class="about_text">
-				      Technothlon is an international school championship organized by the student fraternity of IIT Guwahati. Technothlon began in 2004 in a small room with an aim to Inspire Young Minds. Starting on our journey with a participation of 200 students confined to the city of Guwahati, over the past 13 years we have expanded our reach to over 400 cities all over India and various centers abroad. 
+				      Technothlon is an international school championship organized by the student fraternity of IIT Guwahati. Technothlon began in 2004 in a small room with an aim to Inspire Young Minds. Starting on our journey with a participation of 200 students confined to the city of Guwahati, over the past 14 years we have expanded our reach to over 400 cities all over India and various centers abroad. 
 				      <br>The championship is organized over 2 rounds:<br>
 				      <b>Prelims:</b> a written preliminary examination which takes place in numerous schools all over India in the month of July.<br><b>Mains:</b> an event based competition which is conducted at IIT Guwahati, among the top 100 students from each squad.
 				
@@ -368,8 +374,8 @@ $(function() {
 				      <!--Levels-->
 				
 				      <h4 id="head2" class="about1">LEVELS</h4>
-				      <p id="text2" class="about_text"><b>Prelims (to be held to 16th July 2017)</b><br><br>Prelims is in general an objective written exam. It involves no syllabus or general knowledge and relies solely on the student's logical and analytical thinking abilities. The exam is generally of 2 and ½ hour length.The two team members are given a common Question paper and answer sheet and they can discuss it amongst themselves and attempt the paper together.<br><br>
-				        <b>Mains (To be held at IIT Guwahati during Techniche'17)</b><br><br>Mains is an event based competition.The selected teams of the same squad compete against each other in various events. Each team will have to face 3 events from which top 5 teams from each squad will be selected for the Final Showdown. The events, like prelims, do not require any prerequisite knowledge and students will be taught any extra knowledge they require. The events vary every year and in the past there have been events like Robotics, Aircrash Investigation, Water Rocket and many more!
+				      <p id="text2" class="about_text"><b>Prelims (to be held to 15th July 2018)</b><br><br>Prelims is in general an objective written exam. It involves no syllabus or general knowledge and relies solely on the student's logical and analytical thinking abilities. The exam is generally of 2 and ½ hour length.The two team members are given a common Question paper and answer sheet and they can discuss it amongst themselves and attempt the paper together.<br><br>
+				        <b>Mains (To be held at IIT Guwahati during Techniche'18)</b><br><br>Mains is an event based competition.The selected teams of the same squad compete against each other in various events. Each team will have to face 3 events from which top 5 teams from each squad will be selected for the Final Showdown. The events, like prelims, do not require any prerequisite knowledge and students will be taught any extra knowledge they require. The events vary every year and in the past there have been events like Robotics, Aircrash Investigation, Water Rocket and many more!
 				
 				
 				
@@ -379,7 +385,7 @@ $(function() {
 				      <h4 class="about1" id="head3">SELECTION PROCESS</h4>
 				      <p class="about_text" id="text3">The teams are selected on the basis of the total marks scored in Prelims. The Top 50 teams <b>from each squad</b> are called to IIT Guwahati for the Mains Round.</p>
 				      <h4 class="about1" id="head4">REWARDS</h4>
-				      <p class="about_text" id="text4">Other than the top 100 participants which are selected for mains in each squad (& given Gold Certificates); the next 400 participants in both the squads are awarded with Silver Certificates from Techniche, IIT Guwahati. Also there are various other prizes to be won which will be disclosed later. Everyone participating in Technothlon 2017 will receive e-Certificate of participation.</p>
+				      <p class="about_text" id="text4">Other than the top 100 participants which are selected for mains in each squad (& given Gold Certificates); the next 400 participants in both the squads are awarded with Silver Certificates from Techniche, IIT Guwahati. Also there are various other prizes to be won which will be disclosed later. Everyone participating in Technothlon 2018 will receive e-Certificate of participation.</p>
 				      <h4 class="about1" id="head5">TESTIMONIALS</h4>
 				      <p id="text5" class="about_text"> <b>HC Verma</b> <br><br>
 				        I saw your questions, and it is good that I don't have to appear in that. It's very tough and very very challenging and you are targeting the best brains.
@@ -403,7 +409,7 @@ $(function() {
     <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
 
       <div class="mdl-card__media">
-        <img src="img/meta_fb-min.jpg" style="width: 100%; height: auto;">
+        <img src="img/win_poster.jpg" style="width: 100%; height: auto;">
       </div>
 
       <div class="mdl-card__title mdl-card--expand">
@@ -411,15 +417,15 @@ $(function() {
       </div>
 
       <div class="mdl-card__actions mdl-card--border">
-        To be held on 16th July 2017
+        Exam Date : 15th July 2018
       </div>
 
     </div>
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
+    <!-- <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
 
       <div class="mdl-card__media">
-        <img src="img/meta_fb-min.jpg" style="width: 100%; height: auto;">
+        <img src="img/nasa2017.jpg" style="width: 100%; height: auto;">
       </div>
 
       <div class="mdl-card__title mdl-card--expand">
@@ -427,11 +433,11 @@ $(function() {
       </div>
 
       <div class="mdl-card__actions mdl-card--border">
-        <b>a guided trip to NASA, USA !</b>
+        <b>A guided trip to NASA, USA !</b>
 
       </div>
 
-    </div>
+    </div> -->
 
 
     <!--CARD2-->
@@ -459,7 +465,7 @@ $(function() {
     </div>
 
 
-    <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
+    <!-- <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin-bottom: 8px;">
 
       <div class="mdl-card__media">
         <img src="img/tpediaposter.jpg" style="width: 100%; height: auto;">
@@ -475,7 +481,7 @@ $(function() {
         </a>
       </div>
       
-    </div>
+    </div> -->
 
 
     <!--Card3-->
@@ -483,30 +489,30 @@ $(function() {
       <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
 
         <div class="mdl-card__media">
-          <img src="img/tcoup.jpg" style="width: 100%; height: auto;" id="tcoupimg">
+          <img src="img/tcoupE0501.jpg" style="width: 100%; height: auto;" id="tcoupimg">
         </div>
         <div class="mdl-card__title mdl-card--expand">
           <h2 class="mdl-card__title-text">Techno Coup D'oeil</h2>
         </div>
         <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
-          Mind Boggling Puzzles on Facebook (<span id="tcoupid">E0402</span>)<br>
+          Mind Boggling Puzzles on Facebook (<span id="tcoupid">E0501</span>)<br>
         </div>
 
       </div>
     </a>
 
     <!--Card5-->
-    <a href="http://technothlon.tumblr.com/post/156212444233/the-fosbury-flop">
+    <a href="https://medium.com/@technothlon/the-waves-from-eternity-368fc5daa96c">
       <div class="demo-card-square mdl-card mdl-shadow--2dp" id="original" style="margin-bottom: 8px;">
 
         <div class="mdl-card__media">
-          <img src="img/blog.jpg" style="width: 100%; height: auto;" id="tcoupimg">
+          <img src="img/medium1.jpeg" style="width: 100%; height: auto;" id="tcoupimg">
         </div>
         <div class="mdl-card__title mdl-card--expand">
           <h2 class="mdl-card__title-text">Technothlon Official Blog</h2>
         </div>
         <div class="mdl-card__supporting-text mdl-card--expand" id="card" style="padding-top: 0px; padding-bottom: 16px;">
-          Read the blog- <span id="tcoupid"><b>The Science Behind The Fosbury Flop</b></span><br>
+          Read the blog - <span id="tcoupid"><b>The Waves from Eternity</b></span><br>
         </div>
 
       </div>
@@ -531,29 +537,29 @@ $(function() {
 				
 				              <select class="select_menu" id="state" name="state" style="margin-top: 8px;">
 				                <option value="">Select State</option>
-                        <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Assam">Assam</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Chandigarh">Chandigarh</option>
-                        <option value="Chattisgarh">Chattisgarh</option>
-                        <option value="Delhi (Nct)">Delhi (Nct)</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Haryana">Haryana</option>
-                        <option value="Himachal Pradesh">Himachal Pradesh</option>
-                        <option value="Jammu And Kashmir">Jammu And Kashmir</option>
-                        <option value="Jharkhand">Jharkhand</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Punjab">Punjab</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
-                        <option value="Uttar Pradesh">Uttar Pradesh</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="West Bengal">West Bengal</option>
+				                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+				                        <option value="Assam">Assam</option>
+				                        <option value="Bihar">Bihar</option>
+				                        <option value="Chandigarh">Chandigarh</option>
+				                        <option value="Chattisgarh">Chattisgarh</option>
+				                        <option value="Delhi (Nct)">Delhi (Nct)</option>
+				                        <option value="Goa">Goa</option>
+				                        <option value="Gujarat">Gujarat</option>
+				                        <option value="Haryana">Haryana</option>
+				                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+				                        <option value="Jammu And Kashmir">Jammu And Kashmir</option>
+				                        <option value="Jharkhand">Jharkhand</option>
+				                        <option value="Karnataka">Karnataka</option>
+				                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+				                        <option value="Maharashtra">Maharashtra</option>
+				                        <option value="Odisha">Odisha</option>
+				                        <option value="Punjab">Punjab</option>
+				                        <option value="Rajasthan">Rajasthan</option>
+				                        <option value="Tamil Nadu">Tamil Nadu</option>
+				                        <option value="Telangana">Telangana</option>
+				                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+				                        <option value="Uttarakhand">Uttarakhand</option>
+				                        <option value="West Bengal">West Bengal</option>
 				              </select>
 				
 				              <select class="select_menu" disabled="disabled" id="city">
@@ -571,170 +577,170 @@ $(function() {
 				            </div>
 				
 				            <h4 class="about1 heads">MEET THE HEADS</h4>
-				            <div id="text8">
-				
-				              <!--Card1-->
-				              <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				                <div class="mdl-card__media" id="jitika">
-				                  <div class="contact_image">
-				                    <img src="img/jitika.jpg" style="width: 100%; height: auto;">
-				                    <h2 class="zone"><span class="zone_bg">North Zone<span></h2>
-				                  </div>
-				                </div>
-				
-				
-				                <div class="mdl-card__title mdl-card--expand"  id="northzone">
-				
-				                  <h2 class="mdl-card__title-text">North Zone</h2>
-				                </div>
-				
-				                <span style="margin-left:16px; margin-bottom: 16px;" id="name" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Jitika Rajpoot</span></span>
-				
-				                <div class="mdl-card__supporting-text" id="contact_info">
-				
-				                  <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+917664014135</span></span><br><br>
-				                  <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">jitika@technothlon.techniche.org</span></span><br>
-				                </div>
-				
-				  <!--div class="mdl-card__actions mdl-card--border" style="margin-top: 8px;">
-				    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="cmore1">
-				      MORE
-				    </a>
-				  </div-->
-				</div>
-				
-				<!--Card2-->
-				
-				<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				  <div class="mdl-card__media" id="jitika1">
-				    <div class="contact_image">
-				      <img src="img/pratyay.jpg" style="width: 100%; height: auto;">
-				      <h2 class="zone"><span class="zone_bg">West Zone<span></h2>
-				    </div>
-				  </div>
-				
-				
-				  <div class="mdl-card__title mdl-card--expand"  id="northzone1">
-				
-				    <h2 class="mdl-card__title-text">West Zone</h2>
-				  </div>
-				
-				  <span style="margin-left:16px; margin-bottom: 16px;" id="name1" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Pratyay Nigam</span></span>
-				
-				  <div class="mdl-card__supporting-text" id="contact_info1">
-				
-				    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+918723886554</span></span><br><br>
-				    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">pratyay@technothlon.techniche.org</span></span><br>
-				  </div>
-				
-				</div>
-				
-				<!--Card3-->
-				<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				  <div class="mdl-card__media" id="jitika2">
-				    <div class="contact_image">
-				      <img src="img/uday.jpg" style="width: 100%; height: auto;">
-				      <h2 class="zone"><span class="zone_bg">Central Zone<span></h2>
-				    </div>
-				  </div>
-				
-				
-				  <div class="mdl-card__title mdl-card--expand"  id="northzone2">
-				
-				    <h2 class="mdl-card__title-text">Central Zone</h2>
-				  </div>
-				
-				  <span style="margin-left:16px; margin-bottom: 16px;" id="name2" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Udayraj Shrikant Deshmukh</span></span>
-				
-				  <div class="mdl-card__supporting-text" id="contact_info2">
-				
-				    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+918723885619</span></span><br><br>
-				    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">udayraj@technothlon.techniche.org</span></span><br>
-				  </div>
-				
-				
-				</div>
-				
-				<!--Card4-->
-				<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				  <div class="mdl-card__media" id="jitika3">
-				    <div class="contact_image">
-				      <img src="img/yash.jpg" style="width: 100%; height: auto;">
-				      <h2 class="zone"><span class="zone_bg">East Zone<span></h2>
-				    </div>
-				  </div>
-				
-				
-				  <div class="mdl-card__title mdl-card--expand"  id="northzone3">
-				
-				    <h2 class="mdl-card__title-text">East Zone</h2>
-				  </div>
-				
-				  <span style="margin-left:16px; margin-bottom: 16px;" id="name3" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Yash Gandhe</span></span>
-				
-				  <div class="mdl-card__supporting-text" id="contact_info3">
-				
-				    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+919881075633</span></span><br><br>
-				    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">yash@technothlon.techniche.org</span></span><br>
-				  </div>
-				
-				
-				</div>
-				
-				<!--Card5-->
-				<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				  <div class="mdl-card__media" id="jitika4">
-				    <div class="contact_image">
-				      <img src="img/likhita.jpg" style="width: 100%; height: auto;">
-				      <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
-				    </div>
-				  </div>
-				
-				
-				  <div class="mdl-card__title mdl-card--expand"  id="northzone4">
-				
-				    <h2 class="mdl-card__title-text">South Zone</h2>
-				  </div>
-				
-				  <span style="margin-left:16px; margin-bottom: 16px;" id="name4" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Likhita Konjeti</span></span>
-				
-				  <div class="mdl-card__supporting-text" id="contact_info4">
-				
-				    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 7896669914</span></span><br><br>
-				    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">likhita@technothlon.techniche.org</span></span><br>
-				  </div>
-				
-				
-				</div>
-				
-				<!--Card6-->
-				<div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
-				  <div class="mdl-card__media" id="jitika5">
-				    <div class="contact_image">
-				      <img src="img/vishakh.jpg" style="width: 100%; height: auto;">
-				      <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
-				    </div>
-				  </div>
-				
-				
-				  <div class="mdl-card__title mdl-card--expand"  id="northzone5">
-				
-				    <h2 class="mdl-card__title-text">South Zone</h2>
-				  </div>
-				
-				  <span style="margin-left:16px; margin-bottom: 16px;" id="name5" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Vishak Regu</span></span>
-				
-				  <div class="mdl-card__supporting-text" id="contact_info5">
-				
-				    <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 8876211554</span></span><br><br>
-				    <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">vishak@technothlon.techniche.org</span></span><br>
-				  </div>
-				
-				
-				</div>
-				
-				
-				</div>
+				                    <div id="text8">
+				        
+				                      <!--Card1-->
+				                      <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				                        <div class="mdl-card__media" id="jitika">
+				                          <div class="contact_image">
+				                            <img src="img/shambhavi.jpg" style="width: 100%; height: auto;">
+				                            <h2 class="zone"><span class="zone_bg">North Zone<span></h2>
+				                          </div>
+				                        </div>
+				        
+				        
+				                        <div class="mdl-card__title mdl-card--expand"  id="northzone">
+				        
+				                          <h2 class="mdl-card__title-text">North Zone</h2>
+				                        </div>
+				        
+				                        <span style="margin-left:16px; margin-bottom: 16px;" id="name" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Shambhavi Das</span></span>
+				        
+				                        <div class="mdl-card__supporting-text" id="contact_info">
+				        
+				                          <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 8294426361</span></span><br><br>
+				                          <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">shambhavi@technothlon.techniche.org</span></span><br>
+				                        </div>
+				        
+				          <!--div class="mdl-card__actions mdl-card--border" style="margin-top: 8px;">
+				            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="cmore1">
+				              MORE
+				            </a>
+				          </div-->
+				        </div>
+				        
+				        <!--Card2-->
+				        
+				        <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				          <div class="mdl-card__media" id="jitika1">
+				            <div class="contact_image">
+				              <img src="img/ishan.jpg" style="width: 100%; height: auto;">
+				              <h2 class="zone"><span class="zone_bg">West Zone<span></h2>
+				            </div>
+				          </div>
+				        
+				        
+				          <div class="mdl-card__title mdl-card--expand"  id="northzone1">
+				        
+				            <h2 class="mdl-card__title-text">West Zone</h2>
+				          </div>
+				        
+				          <span style="margin-left:16px; margin-bottom: 16px;" id="name1" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Ishan Azad</span></span>
+				        
+				          <div class="mdl-card__supporting-text" id="contact_info1">
+				        
+				            <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 9459407907</span></span><br><br>
+				            <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">ishan@technothlon.techniche.org</span></span><br>
+				          </div>
+				        
+				        </div>
+				        
+				        <!--Card3-->
+				        <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				          <div class="mdl-card__media" id="jitika2">
+				            <div class="contact_image">
+				              <img src="img/abhay.jpg" style="width: 100%; height: auto;">
+				              <h2 class="zone"><span class="zone_bg">Central Zone<span></h2>
+				            </div>
+				          </div>
+				        
+				        
+				          <div class="mdl-card__title mdl-card--expand"  id="northzone2">
+				        
+				            <h2 class="mdl-card__title-text">Central Zone</h2>
+				          </div>
+				        
+				          <span style="margin-left:16px; margin-bottom: 16px;" id="name2" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Abhay Kshatriya</span></span>
+				        
+				          <div class="mdl-card__supporting-text" id="contact_info2">
+				        
+				            <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 7663010006</span></span><br><br>
+				            <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">abhay@technothlon.techniche.org</span></span><br>
+				          </div>
+				        
+				        
+				        </div>
+				        
+				        <!--Card4-->
+				        <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				          <div class="mdl-card__media" id="jitika3">
+				            <div class="contact_image">
+				              <img src="img/paranjay.jpg" style="width: 100%; height: auto;">
+				              <h2 class="zone"><span class="zone_bg">East Zone<span></h2>
+				            </div>
+				          </div>
+				        
+				        
+				          <div class="mdl-card__title mdl-card--expand"  id="northzone3">
+				        
+				            <h2 class="mdl-card__title-text">East Zone</h2>
+				          </div>
+				        
+				          <span style="margin-left:16px; margin-bottom: 16px;" id="name3" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Paranjay Bagga</span></span>
+				        
+				          <div class="mdl-card__supporting-text" id="contact_info3">
+				        
+				            <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 9216112392</span></span><br><br>
+				            <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">paranjay@technothlon.techniche.org</span></span><br>
+				          </div>
+				        
+				        
+				        </div>
+				        
+				        <!--Card5-->
+				        <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				          <div class="mdl-card__media" id="jitika4">
+				            <div class="contact_image">
+				              <img src="img/apurva.jpg" style="width: 100%; height: auto;">
+				              <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
+				            </div>
+				          </div>
+				        
+				        
+				          <div class="mdl-card__title mdl-card--expand"  id="northzone4">
+				        
+				            <h2 class="mdl-card__title-text">South Zone</h2>
+				          </div>
+				        
+				          <span style="margin-left:16px; margin-bottom: 16px;" id="name4" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">Apurva N. Saraogi</span></span>
+				        
+				          <div class="mdl-card__supporting-text" id="contact_info4">
+				        
+				            <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 8320527544</span></span><br><br>
+				            <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">apurva@technothlon.techniche.org</span></span><br>
+				          </div>
+				        
+				        
+				        </div>
+				        
+				        <!--Card6-->
+				        <div class="demo-card-square mdl-card mdl-shadow--2dp ex" style="margin-bottom:8px;">
+				          <div class="mdl-card__media" id="jitika5">
+				            <div class="contact_image">
+				              <img src="img/harsha.jpg" style="width: 100%; height: auto;">
+				              <h2 class="zone"><span class="zone_bg">South Zone<span></h2>
+				            </div>
+				          </div>
+				        
+				        
+				          <div class="mdl-card__title mdl-card--expand"  id="northzone5">
+				        
+				            <h2 class="mdl-card__title-text">South Zone</h2>
+				          </div>
+				        
+				          <span style="margin-left:16px; margin-bottom: 16px;" id="name5" class="name2">  <img src="img/person.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px;">K. Harsha Vardhan</span></span>
+				        
+				          <div class="mdl-card__supporting-text" id="contact_info5">
+				        
+				            <span><img src="img/call.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">+91 8309467880</span></span><br><br>
+				            <span><img src="img/mail.png" class="icon_ashu"><span style="font-size: 14px; font-family: "roboto"; font-weight: 500; margin-left: 8px; color: #f57c00;">harsha@technothlon.techniche.org</span></span><br>
+				          </div>
+				        
+				        
+				        </div>
+				        
+				        
+				        </div>
 				
 				
 				<h4 class="about1 heads">CATCH US ON SOCIAL MEDIA</h4>
@@ -785,7 +791,7 @@ $(function() {
 
 
 	
-	</main> </div> 
+
 	<script src="cordova.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/file.js"></script>
