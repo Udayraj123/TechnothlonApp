@@ -6,7 +6,7 @@
   <script src="material.js"></script-->
 
   <link rel="stylesheet" href="css/hammenu-led.css">
-  <meta http-equiv="Content-Security-Policy" content="default-src *;  font-src 'self' data: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *;  font-src 'self' data: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> -->
 <link rel="stylesheet" href="css/materialicons.css">
 
 <style>
@@ -117,7 +117,7 @@ body{
   <main class="mdl-layout__content">
     <section class="mdl-layout__tab-panel is-active">
       <div class="page-content" style="margin-left: 4.5%">
-        <h1 style="font-size: 24px; color: #212121; font-weight: 500; padding-top: 0px; margin-top: 8px; margin-bottom: 8px;"> Old Question Papers</h1>
+        <h1 style="font-size: 24px; color: #212121; font-weight: 500; padding-top: 0px; margin-top: 8px; margin-bottom: 8px;"> Previous Years' Question Papers</h1>
 
         <select class="select_menu" id='year' style="margin-top: 8px;">
           <option value="">SELECT YEAR</option>
@@ -144,17 +144,17 @@ body{
         </select>
         <br/>
         <button id="dwnbtn" style="font-size: 14px; color: #f57c00; font-weight: 500; padding-top: 0px; margin-top: 8px; margin-bottom: 8px;border:none;background:none">DOWNLOAD</button>
-
+        
       </div>
     </section>
 
   </main>
 </div>
-  <script src="cordova.js"></script>
-  <script src="js/download.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/expand.js"></script>
-  <script src="js/jquery.min.js"></script>
+  <script src="./cordova.js"></script>
+  <script src="./js/download.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/expand.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script>
     $('#year').change(function(){
         var year =  $('#year').val();

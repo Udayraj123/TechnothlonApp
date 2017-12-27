@@ -4,7 +4,7 @@ var app = function() {
 var count=-1 ;
 var onDeviceReady =  function() {
     var toast = window.plugins.toast;
-
+    
     // document.getElementById('dwnbtn').addEventListener('click', function () {
     //     downLinks = {
     //         '2016HAUTSEnglish' : [
@@ -98,10 +98,11 @@ var onDeviceReady =  function() {
 
     // });
 
-    document.getElementById('dwnbtn').addEventListener('click', function () {
+    document.getElementById('dwnbtn').addEventListener("click", function () {
         if ($('#year').val() == '2016' && $('#category').val() == 'HAUTS' && $('#language').val() == 'English') {
             count = 3;
             toast.show("Downloading...",1000,'bottom');
+            // window.open("https://drive.google.com/file/d/0B5-GsYZi9MQFRHNUTG9aT3RTMmM/view");
             download("https://drive.google.com/uc?export=download&id=0B5-GsYZi9MQFRHNUTG9aT3RTMmM", "2016/en-h-Ques.pdf");
             download("https://drive.google.com/uc?export=download&id=0B5-GsYZi9MQFd0JTQ28xM3VFX1E", "2016/en-h-Sol.pdf");
             download("https://drive.google.com/uc?export=download&id=0B5-GsYZi9MQFVV84SVpCcEpIZVU", "2016/en-h-Ans.pdf");
